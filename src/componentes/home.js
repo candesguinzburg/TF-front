@@ -10,7 +10,7 @@ import "../css/home.css";
 const Home = () => {
   const [usuario, setUsuario] = useState("");
   const [comentario, setComentario] = useState("");
-  const [comentarios, setComentarios] = useState([]);
+  const [comentarios, setComentarios] = useState("");
   const [editCommentId, setEditCommentId] = useState(null);
   const [newCommentContent, setNewCommentContent] = useState("");
 
