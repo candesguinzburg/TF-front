@@ -3,6 +3,7 @@ import axios from 'axios'
 import "../css/sendMail.css"
 import { useNavigate } from 'react-router-dom'
 
+axios.defaults.withCredentials = true
 const SendMail = () => {
     
     const [usuario, setUsuario] = useState('')

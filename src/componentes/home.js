@@ -5,7 +5,9 @@ import Foto2 from "../img/fi2.jpg";
 import Foto3 from "../img/fe.jpg";
 import "bootstrap/dist/css/bootstrap.min.css";
 import { Carousel } from "react-bootstrap";
-import "../css/home.css";
+import "../css/home.css"
+
+axios.defaults.withCredentials = true;
 
 const Home = () => {
   const [usuario, setUsuario] = useState("");
