@@ -1,0 +1,84 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+/* parte que queda igual en el header */
+/* fondo del header */
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  display: flex;
+  background: #4caf50;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 1000;
+}
+/* nav del header */
+.navegar {
+  display: flex;
+  list-style-type: none;
+  margin-right: 10%;
+}
+/* estilos pantallas chicas */
+@media (max-width: 660px) {
+  /* Foto del logo */
+  .logo {
+    width: 60%;
+  }
+  /* links del nav ocultos */
+  .Navnombre {
+    display: none;
+  }
+  /* iconos del nav */
+  .Navicon {
+    text-decoration: none;
+    width: 35px;
+    margin: 15% 2% 2% 2%;
+    padding: 1%;
+    align-items: center;
+  }
+  /* color de botones */
+  .Navcolor {
+    color: rgba(255, 79, 9, 0.787);
+  }
+  .Navcolor:hover {
+    color: #e8c192;
+  }
+}
+/* estilos pantallas grandes */
+@media (min-width: 660px) {
+  .logo {
+    width: 195px;
+    margin: 2%;
+  }
+  /* iconos ocultos */
+  .Navicon {
+    display: none;
+  }
+  /* botones del nav */
+  .Navboton {
+    background-color: rgba(255, 79, 9, 0.787);
+    width: 6.2rem;
+    height: 3rem;
+    text-align: center;
+    align-items: center;
+    margin: 0.6rem;
+    border-radius: 10px;
+    border: solid black;
+    color: black;
+    display: flex;
+    justify-content: center;
+  }
+  .Navboton:hover {
+    background: #e8c192;
+  }
+  .Navnombre {
+    color: black;
+    text-decoration: none;
+    font-size: small;
+    padding: 5%;
+  }
+}

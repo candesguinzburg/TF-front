@@ -1,0 +1,28 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+/* fondo de la pagina */
+.error{
+      background-color: rgba(255, 79, 9, 0.787);
+      padding: 10%;
+
+  }
+  /* titulo principal */
+  .titError{
+    color: white;
+    font-size: 100px;
+    margin-top: 100px;
+    text-align: center;
+  }
+  /* subtitulo
+   */
+  .subError{
+    color: white;
+    font-size: 50px;
+    text-align: center;
+    margin-bottom: 100px;
+  }

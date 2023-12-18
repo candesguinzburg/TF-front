@@ -1,0 +1,47 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+/* Estilo del mapa */
+.mapa {
+  width: 100%;
+  border: solid rgba(0, 0, 0, 0.161);
+}
+/* navegador de las redes sociales */
+.navegador {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  margin: 5%;
+}
+/* estilos iconos redes */
+.icon {
+  color: rgba(255, 79, 9, 0.787);
+  margin: 2%;
+}
+.icon:hover {
+  color: #e8c192;
+}
+/* estilos pantallas chicas */
+@media (max-width: 850px) {
+  .icon {
+    width: 2rem;
+  }
+  .mapa {
+    height: 300px;
+  }
+  .tit {
+    font-size: 40px;
+  }
+  .sub {
+    font-size: 20px;
+  }
+ 
+}
+/* estilompantalla grandes */
+@media (min-width: 660px) {
+  .icon {
+    width: 3rem;
+  }
+}

@@ -1,0 +1,15 @@
+{
+    "routes": [
+      {
+        "src": "/app.js(.*)",
+        "dest": "https://tfinal-b.vercel.app/",
+        "headers": {
+          "Host": "tfinal-b.vercel.app"
+        }
+      },
+      {
+        "src": "/(.*)",
+        "dest": "/$1"
+      }
+    ]
+  }

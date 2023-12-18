@@ -1,0 +1,92 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+body {
+  margin-top: 100px;
+}
+/* titulo */
+.tit {
+  font-size: 80px;
+}
+/* subtitulo */
+.sub{
+  font-size: 40px;
+}
+
+/* fondo de todas los componentes a exepcion del footer y el header */
+.fondo {
+  margin: 100px 40px;
+  padding: 4px;
+  border-radius: 10px;
+  text-align: center;
+  align-items: center;
+  background: white;
+}
+/* estilos del carrusel */
+.carousel {
+  width: 100%;
+  max-width: 95%;
+  margin: 0 auto;
+}
+
+/* estilo del parrafo */
+.descripcionL {
+  margin: 5%;
+  font-size: 25px;
+  text-align: justify;
+}
+/* fondo comemtarios */
+.comentarios{
+  background:255, 79, 9, 0.787;
+  display: grid;
+  justify-items: center;
+  grid-template-columns: repeat(4, 1fr)
+}
+/* comentarios */
+.com{
+  border-radius: 10px;
+  border: solid;
+ width: 90%; 
+padding: 10px;
+margin: 10px;
+background: rgba(255, 79, 9, 0.787);
+font-size: 18px;
+}
+
+.opiniones{
+  text-align: center;
+  align-items: center;
+  margin: 2% 10%;
+}
+/* botones comentarios */
+.Mboton{
+  border-radius: 10px;
+  background: #4caf50;
+  margin: 3px;
+  padding: 5px;
+
+} 
+/* titulo y subtitulo en pantallas chicas */
+@media (max-width: 750px) {
+  .tit {
+    font-size: 40px;
+  }
+  .sub{
+    font-size: 20px;
+    }
+    h3{
+      font-size: 19px ;
+    }
+    .descripcionL {
+      font-size: 15px;
+    }
+    .com{ 
+  font-size: 14px;
+    }
+    .comentarios{
+      grid-template-columns: repeat(2, 1fr)
+    }
+  }
