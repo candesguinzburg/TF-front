@@ -129,9 +129,9 @@ const Home = () => {
           con un staff de vendedores que siempre te van a atender y asesorar de
           la mejor manera posible.
         </p>
-       {/*  <div> */}
+         <div> 
           {/* comentarios */}
-        {/*   <h3>Opiniones de clientes:</h3>
+         <h3>Opiniones de clientes:</h3>
           <div className="comentarios">
             { comentarios.map((comentario) => (
               <div key={comentario._id} className="com">
@@ -179,7 +179,7 @@ const Home = () => {
               </div>
             ))}
           </div>
-        </div> */}
+        </div> 
 
         {/* Form nuevos comentarios  */}
         <div>
@@ -221,4 +221,4 @@ const Home = () => {
     </>
   );
 };
-export default Home;
+export default Home; 
