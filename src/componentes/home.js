@@ -7,12 +7,12 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import { Carousel } from "react-bootstrap";
 import "../css/home.css"
 
-axios.defaults.withCredentials = true;
+
 
 const Home = () => {
   const [usuario, setUsuario] = useState("");
   const [comentario, setComentario] = useState("");
-  const [comentarios, setComentarios] = useState("");
+  const [comentarios, setComentarios] = useState([]);
   const [editCommentId, setEditCommentId] = useState(null);
   const [newCommentContent, setNewCommentContent] = useState("");
 
