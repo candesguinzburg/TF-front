@@ -1,7 +1,9 @@
+# Bienestar Sport
 
-# Página web realizada como trabajo final de la diplomatura de programación web full stack de la Universidad Tecnológica Nacional. 
+## Página web realizada como trabajo final de la diplomatura de programación web full stack de la Universidad Tecnológica Nacional. 
 
-#### Cuenta con 4 pestañas navegables, en donde da información del negocio de venta de artículos deportivos, Bienestar Sport.
+
+Cuenta con 4 pestañas navegables, en donde da información del negocio de venta de artículos deportivos, Bienestar Sport.
 
 ### Primer pestaña:
 Contiene un carrusel que muestra fotos del local, información general acerca del comercio, además de un espacio en donde se puede tanto leer y comentar acerca del negocio.
