@@ -1,70 +1,42 @@
-# Getting Started with Create React App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# Página web realizada como trabajo final de la diplomatura de programación web full stack de la Universidad Tecnológica Nacional. 
 
-## Available Scripts
+#### Cuenta con 4 pestañas navegables, en donde da información del negocio de venta de artículos deportivos, Bienestar Sport.
 
-In the project directory, you can run:
+### Primer pestaña:
+Contiene un carrusel que muestra fotos del local, información general acerca del comercio, además de un espacio en donde se puede tanto leer y comentar acerca del negocio.
+Esos comentarios se pueden editar y borrar.
 
-### `npm start`
+### Segunda pestaña:
+Está conectada a una API y muestra los deportes de los cuales el local comercializa artículos.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+### Tercer pestaña:
+Contiene un mapa de la ubicación exacta del local y los links a las redes sociales.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+### Cuarta pestaña:
+Cuenta con la opción de loguearse y registrarse a la página, para luego poder enviar un mail de consulta al comercio.
 
-### `npm test`
+## FRONTEND
+Esta programado en REACT, utiliza la dependencia REACT-ROUTER-DOM para manejar los rutas de la aplicación,
+y la librería BOOTSTRAP para proporcionar algunos estilos.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## BACKEND
+Esta programado en NODE JS, y conectado con la base de datos MONGO DB, utilizando MOONGOSE para lograr la conexión. 
+A su vez se utilizan las dependencias BCRYPT para encriptar las contraseñas, DOTENV para generar y proteger variables de entorno 
+y HBS, EXPRESS,MORGAN, NODEMAILER, HTTP-ERRORS y DEBUG para facilitar el desarrollo.
 
-### `npm run build`
+## DEPLOY
+Tanto en el FRONTEND como en el BACKEND se realizo en VERCEL, utilizando AXIOS para lograr la conexión.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+### Deploy del front:
+https://tf-front-candeguinzburg-gmailcom.vercel.app/ 
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+### Deploy del Back:
+https://tfinal-b.vercel.app/users/
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
-### `npm run eject`
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
 
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
