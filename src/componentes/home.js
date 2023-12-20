@@ -19,7 +19,7 @@ const Home = () => {
   useEffect(() => {
     // Hacer una solicitud para obtener los comentarios
     axios
-      .get("/mostrar")
+      .get("https://tfinal-b.vercel.app/mostrar")
       .then((response) => {
         console.log("Datos recibidos:", response.data);
         setComentarios(response.data.comentario);
@@ -38,7 +38,7 @@ const Home = () => {
     e.preventDefault();
 
     try {
-      const response = await axios.post("/comentar", {
+      const response = await axios.post("https://tfinal-b.vercel.app/comentar", {
         usuario,
         comentario,
       });
@@ -47,7 +47,7 @@ const Home = () => {
       alert("Comentario subido correctamente");
 
       const comentariosActualizados = await axios.get(
-        "/mostrar"
+        "https://tfinal-b.vercel.app/mostrar"
       );
       setComentarios(comentariosActualizados.data.comentario);
       resetear();
@@ -73,7 +73,7 @@ const Home = () => {
   /* guardar edicion */
   const handleSaveEdit = async (commentId) => {
     try {
-      await axios.post("/edit", {
+      await axios.post("https://tfinal-b.vercel.app/edit", {
         id: commentId,
         comentario: newCommentContent,
       });
@@ -83,7 +83,7 @@ const Home = () => {
 
       // Volver a cargar los comentarios
       const comentariosActualizados = await axios.get(
-        "/mostrar"
+        "https://tfinal-b.vercel.app/mostrar"
       );
       setComentarios(comentariosActualizados.data.comentario);
     } catch (error) {
@@ -95,10 +95,10 @@ const Home = () => {
   /* borrar comentarios */
   const borrar = async (id) => {
     try {
-      const response = await axios.post("/borrar", { id });
+      const response = await axios.post("https://tfinal-b.vercel.app/borrar", { id });
       console.log(response.data.message);
       alert("Comentario borrado correctamente");
-      const comActializados = await axios.get("/mostrar");
+      const comActializados = await axios.get("https://tfinal-b.vercel.app/mostrar");
       setComentarios(comActializados.data.comentario);
     } catch (error) {
       console.error("error al borrar comentario");

@@ -22,7 +22,7 @@ const Registrate = () =>  {
         e.preventDefault()
         
         try{
-            const response = await axios.post('/users/create', {
+            const response = await axios.post("https://tfinal-b.vercel.app/users/create", {
                 nombre,
                 mail,
                 password
